@@ -1,0 +1,24 @@
+// This file is part of NppSync plugin by evilworks.
+// Licence: Public Domain.
+
+{
+	"manifest_version" : 2,
+	"name" : "NppSync",
+	"version" : "1.2.0",
+	"description" : "NppSync refreshes loaded local files when their source has been modified in notepad++.",
+	"icons" : {
+		"128" : "icon_128.png"
+	},
+	"page_action" : {
+		"default_title" : "NppSync",
+		"default_icon" : {
+			"19" : "icon_19_disabled.png"
+		}
+	},
+	"background" : {
+		"scripts" : ["background.js"],
+		"persistent": false
+	},
+	"options_page": "options.html",
+	"permissions" : ["tabs", "http://localhost:*/*", "file:///*"]
+}
